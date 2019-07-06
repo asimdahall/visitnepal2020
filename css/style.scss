@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+$light-primary-color: "white";
+$light-secondary-color: "black";
+$dark-primary-color: "black";
+$dark-secondary-color: "white";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  .cover {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f9/Pokhara2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 100%;
+      nav {
+        width: 100%;
+        // border: 1px solid blue;
+        display: flex;
+        height: 20%;
+        .menu {
+          flex: 1;
+          //   height: 70px;
+          //   border: 1px solid red;
+          display: flex;
+          align-items: center;
+          padding-left: 50px;
+          box-sizing: border-box;
+          .hamburger {
+            // border: 1px solid green;
+            width: 50px;
+
+            padding: 10px;
+            div {
+              width: 40px;
+              height: 5px;
+              background-color: white;
+              margin: 5px;
+            }
+          }
+        }
+        .logo {
+          flex: 1;
+          //   height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          //   border: 1px solid red;
+          color: white;
+          font-size: 30px;
+          text-transform: uppercase;
+          img {
+            height: 200px;
+            width: 300px;
+          }
+        }
+        .search-bar {
+          flex: 1;
+          //   height: 70px;
+          //   border: 1px solid red;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding-right: 50px;
+          box-sizing: border-box;
+          .form-item {
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 200px;
+            height: 50px;
+            display: flex;
+            border-radius: 2px;
+            .icon {
+              //   height: 60px;
+              //   width: 150px;
+              width: 30%;
+              //   border: 1px solid red;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                height: 60%;
+                width: 60%;
+              }
+            }
+            input {
+              background: none;
+              border: none;
+              outline: none;
+              color: white;
+              font-size: 20px;
+              box-sizing: border-box;
+              width: 70%;
+              &::placeholder {
+                color: white;
+              }
+              //   padding-left: 10px;
+            }
+          }
+        }
+      }
+      .cover-title {
+        // border: 1px solid red;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .title {
+          width: 60%;
+          text-align: center;
+          font-weight: bold;
+          color: white;
+          font-size: 4em;
+          text-transform: uppercase;
+          font-family: "Pacifico", cursive;
+        }
+      }
+    }
+  }
+}
